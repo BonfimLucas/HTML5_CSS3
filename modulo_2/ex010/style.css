@@ -10,9 +10,6 @@ header{
     margin: 10px;
 }
 
-h1{
-    box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.71);
-}
 
 nav{
     background-color: grey;
@@ -31,6 +28,8 @@ main{
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px 20px 30px 40px;
+    box-shadow: 4px 4px 9px 0px;
 }
 
 article{
@@ -52,4 +51,12 @@ footer{
 
 footer > p{
     margin: 0px;
+}
+
+#bola{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
 }
