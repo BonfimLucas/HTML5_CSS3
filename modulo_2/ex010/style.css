@@ -10,9 +10,14 @@ header{
     margin: 10px;
 }
 
+h1{
+    box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.71);
+}
+
 nav{
     background-color: grey;
     padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.619);
 }
 
 nav > a{
@@ -42,5 +47,9 @@ footer{
     color: white;
     text-align: center;
     padding: 1px;
+    margin: 0px;
+}
+
+footer > p{
     margin: 0px;
 }
