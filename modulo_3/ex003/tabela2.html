@@ -11,6 +11,7 @@
 
         table{
             width: 500px;
+            border-collapse: collapse;
         }
 
         td, th{
@@ -23,8 +24,19 @@
             color: white;
         }
 
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
         .num{
             text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -32,6 +44,7 @@
     <h1>Tabelas Grandes</h1>
     <!--Anatomia para tabelas grandes
     Table
+        caption
         Thead
             tr, td, th
         Tbody
@@ -40,10 +53,11 @@
             tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -62,7 +76,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>84,352,783</strong></td>
             </tr>
         </tfoot>
