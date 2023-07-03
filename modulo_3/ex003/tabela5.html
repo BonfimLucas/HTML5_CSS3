@@ -16,22 +16,36 @@
             border-collapse: collapse;
         }
 
+        th{
+            border: 1px solid black;
+            padding: 4px;
+        }
 
         td{
             border: 1px solid black;
             padding: 4px;
+        }
+
+        #Total{
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <td><strong>Grupos</strong></td>
-            <td><strong>Nomes</strong></td>
-            <td colspan="3"><strong>Filmes</strong></td>
+            <th scope="col"><strong>Grupos</strong></th>
+            <th scope="col"><strong>Nomes</strong></th>
+            <th colspan="3" scope="colgroup"><strong>Filmes</strong></th>
         </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" id="Total">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tr>
-            <td rowspan="3"><strong>Mulheres</strong></td>
+            <th rowspan="3" scope="rowgroup"><strong>Mulheres</strong></th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -50,7 +64,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td rowspan="3"><strong>Homens</strong></td>
+            <th rowspan="3" scope="rowgroup"><strong>Homens</strong></th>
             <td>Bruno Mendonça</td>
             <td>Intocaveis</td>
             <td>Amnésia</td>
