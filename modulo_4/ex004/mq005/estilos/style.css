@@ -47,7 +47,7 @@ menu a{
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: #24272C;
+    background-color: #24272c;
     border-top: 2px solid rgb(81, 79, 79);
     color: #896846;
 }
@@ -58,7 +58,7 @@ menu a:hover{
 
 main{
     width: 90vw;
-    background-color: #7E848B;
+    background-color: #4a4d52;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
@@ -67,6 +67,7 @@ main{
 
 article h2{
     padding-bottom: 20px;
+    color: white;
 }
 
 article p{
