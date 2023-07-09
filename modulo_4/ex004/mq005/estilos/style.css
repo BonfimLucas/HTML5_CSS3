@@ -19,13 +19,28 @@ header h1{
     text-align: center;
 }
 
+#burguer{
+    background-color: #24272C;
+    color: white;
+    display: block;   
+    padding: 10px;
+    text-align: center;
+    cursor: po;
+   }
+   
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{
     list-style-type: none;
 }
+
 
 menu a{
     display: block;
@@ -58,4 +73,6 @@ article p{
     text-align: justify;
     margin-bottom: 29px;
     text-indent: 20px;
+    color: white;
 }
+
