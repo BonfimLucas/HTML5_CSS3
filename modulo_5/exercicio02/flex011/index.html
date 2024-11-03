@@ -9,17 +9,29 @@
 
             background-color: lightsalmon;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
         }
 
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 300px;
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex-basis: 200px;
+        }
 
+        div#caixaA{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#caixaB{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        div#caixaC{
+            flex-shrink: 1;
+            flex-grow: 4;
         }
 
     </style>
@@ -27,17 +39,17 @@
 <body>
     <div class="conteiner">
 
-        <div class="item">Lorem ipsum dolor sit amet consectetur, 
+        <div class="item" id="caixaA">Lorem ipsum dolor sit amet consectetur, 
             adipisicing elit. Porro, hic provident! 
             Dolore sit dignissimos, veritatis id nobis eum sint minima 
             blanditiis voluptas, alias itaque ea? Itaque id iure illum 
             minus!</div>
-        <div class="item">Lorem ipsum dolor sit amet consectetur, 
+        <div class="item" id="caixaB">Lorem ipsum dolor sit amet consectetur, 
             adipisicing elit. Porro, hic provident! 
             Dolore sit dignissimos, veritatis id nobis eum sint minima 
             blanditiis voluptas, alias itaque ea? Itaque id iure illum 
             minus!</div>
-        <div class="item">Lorem ipsum dolor sit amet consectetur, 
+        <div class="item" id="caixaC">Lorem ipsum dolor sit amet consectetur, 
             adipisicing elit. Porro, hic provident! 
             Dolore sit dignissimos, veritatis id nobis eum sint minima 
             blanditiis voluptas, alias itaque ea? Itaque id iure illum 
